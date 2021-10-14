@@ -2,7 +2,7 @@
 
 ## Poly2tri lua wrapper
 
-This is a Lua wrapper around [poly2tri](http://sites-final.uclouvain.be/mema/Poly2Tri/). It provides fast, stable Constrained Delauney Triangulation of convex or concave polygons with or without holes. 
+This is a Lua wrapper around [poly2tri](https://github.com/jhasse/poly2tri). It provides fast, stable Constrained Delauney Triangulation of convex or concave polygons with or without holes. 
 Fork of [lua-poly2tri](https://github.com/TannerRogalsky/lua-poly2tri)
 
 If you like the extension you can support me on patreon.
