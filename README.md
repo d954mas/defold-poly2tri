@@ -7,7 +7,11 @@ Fork of [lua-poly2tri](https://github.com/TannerRogalsky/lua-poly2tri)
 
 If you like the extension you can support me on patreon.
 It will help me make more items for defold.
+
 [![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/d954mas)
+
+
+<img src="https://github.com/d954mas/defold-poly2tri/blob/master/docs/example.jpg">
 
 ## Installation
 
