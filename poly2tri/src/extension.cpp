@@ -18,8 +18,8 @@ static int api_triangulate(lua_State *L) {
   luaL_check(lua_istable(L, 1) == 1, L, "First arg must be a table of vertices.");
   luaL_check(lua_istable(L, 2) == 1, L, "Second arg must be a table of holes.");
   size_t vertexcount = lua_objlen(L, 1);
-  luaL_check(vertexcount >= 6, L, "Only got %d vertices. Pass at least 6.", vertexcount);
-  luaL_check(vertexcount % 2 == 0, L, "Pass an even number of vertices. Got %d.", vertexcount);
+  luaL_check(vertexcount >= 6, L, "Only got %zu vertices. Pass at least 6.", vertexcount);
+  luaL_check(vertexcount % 2 == 0, L, "Pass an even number of vertices. Got %zu.", vertexcount);
   std::vector<p2t::Point*> verts;
   verts.reserve(vertexcount / 2);
   lua_pushnil(L);
@@ -41,8 +41,8 @@ static int api_triangulate(lua_State *L) {
 
     luaL_check(lua_istable(L, -2) == 1, L, "Each hole must be a table of vertices.");
     size_t holevertexcount = lua_objlen(L, -2);
-    luaL_check(holevertexcount >= 6, L, "Only got %d vertices for a hole. Pass at least 6.", holevertexcount);
-    luaL_check(holevertexcount % 2 == 0, L, "Pass an even number of vertices for a hole. Got %d.", holevertexcount);
+    luaL_check(holevertexcount >= 6, L, "Only got %zu vertices for a hole. Pass at least 6.", holevertexcount);
+    luaL_check(holevertexcount % 2 == 0, L, "Pass an even number of vertices for a hole. Got %zu.", holevertexcount);
     std::vector<p2t::Point*> hole;
     hole.reserve(holevertexcount);
 
